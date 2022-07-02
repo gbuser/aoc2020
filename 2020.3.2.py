@@ -1,4 +1,4 @@
-slopes = [(1,1), (3,1),(5,1),(7,1),(1,2)]
+data = [x.rstrip() for x in open('data.txt', 'r')]slopes = [(1,1), (3,1),(5,1),(7,1),(1,2)]
 
 width = len(data[0])
 height = len(data)
