@@ -22,6 +22,6 @@ def hit_trees(dx, dy, trees, width, height):
             trees_hit += 1
     return(trees_hit)
 
-for slope in slopes:
-    tree_product *= hit_trees(slope[0], slope[1], trees, width, height)
+for (dx, dy) in slopes:
+    tree_product *= hit_trees(dx, dy, trees, width, height)
 print(tree_product)
