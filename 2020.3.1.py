@@ -1,16 +1,15 @@
 data = [x.rstrip() for x in open('data.txt', 'r')]
-
-trees = []
-for y in range(len(data)):
-    for x in range(len(data[0])):
-        if data[y][x] == '#':
-            trees.append((x,y))
-
 (posX, posY) = (0,0)
 (dx, dy) = (3, 1)
 trees_hit = 0
 width = len(data[0])
 height = len(data)
+
+trees = []
+for y in range(height):
+    for x in range(width):
+        if data[y][x] == '#':
+            trees.append((x,y))
 
 while posY < height:
     posX += dx
