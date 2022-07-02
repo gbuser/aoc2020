@@ -6,8 +6,8 @@ height = len(data)
 
 trees = []
 tree_product = 1
-for y in range(len(data)):
-    for x in range(len(data[0])):
+for y in range(height)):
+    for x in range(width):
         if data[y][x] == '#':
             trees.append((x,y))
 
