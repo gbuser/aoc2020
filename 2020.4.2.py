@@ -3,6 +3,7 @@ data = [x.rstrip() for x in open('data.txt', 'r')]
 
 passports = []
 this_passport = ''
+
 for line in data:
     this_passport += (' ' + line)
     if len(line) == 0:
