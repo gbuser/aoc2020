@@ -2,6 +2,10 @@ data = [x.rstrip() for x in open('data.txt', 'r')]
 
 passports = []
 this_passport = ''
+
+#join passports split over multiple lines
+#append complete passport and begin new when line is blank
+
 for line in data:
     this_passport += (' ' + line)
     if len(line) == 0:
