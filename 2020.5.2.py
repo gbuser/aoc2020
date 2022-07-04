@@ -7,8 +7,6 @@ for seat in data:
         seat = seat.replace(key, value)
     seats.append(int(seat, 2))
     
-        
-seats.sort()
 missing_seats = [x for x in range(len(seats)) if x not in seats]
 
 print([x for x in missing_seats if (x-1)not in missing_seats and (x+1) not in missing_seats])
