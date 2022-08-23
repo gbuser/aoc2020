@@ -15,7 +15,6 @@ def parse_mem(instruction):
 #propagate a new string and return t 
 def merge(bitmask, mem_value):
     temp = str()
-    bit_list = get_unmasked_bits(bitmask)
     for i in range(len(bitmask)):
         if bitmask[i] == 'X':
             temp += mem_value[i]
