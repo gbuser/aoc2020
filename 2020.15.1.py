@@ -2,10 +2,8 @@ data = [x.rstrip().split(',') for x in open('data.txt', 'r')]
 data = [int(x) for x in data[0]]
 
 numbers = {}
-said_numbers = []
 for x in data:
     numbers[x] = data.index(x) + 1
-    said_numbers.append(x)
 
 position = len(numbers)+1
 current = 0
